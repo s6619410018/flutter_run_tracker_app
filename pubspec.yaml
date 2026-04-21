@@ -1,0 +1,51 @@
+name: flutter_run_tracker_app
+description: "A Flutter application for tracking running activities using Supabase."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  
+  # การจัดการฐานข้อมูลและ Authentication
+  supabase_flutter: ^2.12.0 
+
+  # การจัดการรูปภาพ (สำหรับหน้า Add/Update ที่มีการถ่ายภาพหรือเลือกรูป)
+  image_picker: ^1.1.2
+  
+  # ฟอนต์และไอคอนเพิ่มเติม
+  google_fonts: ^8.0.2
+  font_awesome_flutter: ^11.0.0
+  
+  # การจัดการรูปแบบวันที่ (เช่น วันที่วิ่ง) และตัวเลข
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  
+  # สำหรับการสร้าง App Icon
+  icons_launcher: ^3.0.3
+
+# ตั้งค่า App Icon
+icons_launcher: 
+  image_path: "assets/images/logo.png" # แก้ไข path ตามไฟล์โลโก้จริงของคุณ
+  platforms:
+    android: 
+      enable: true
+    ios: 
+      enable: true
+
+flutter:
+  uses-material-design: true
+
+  # การประกาศโฟลเดอร์สำหรับเก็บรูปภาพประกอบในแอป
+  assets:
+    - assets/images/
+    # หากมีไฟล์ภาพเฉพาะเจาะจงที่ใช้ใน Splash Screen หรือหน้าหลัก
+    # - assets/images/run_tracker_logo.png
