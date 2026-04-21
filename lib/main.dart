@@ -10,7 +10,7 @@ Future<void> main() async {
   // 2. เริ่มต้น Supabase (แนะนำให้ใส่ไว้ใน try-catch เพื่อป้องกันแอปค้างถ้าเน็ตมีปัญหา)
   try {
     await Supabase.initialize(
-      url: 'https://eamtktlxbddenrrvwzmw.supabase.co/rest/v1/',
+      url: 'https://eamtktlxbddenrrvwzmw.supabase.co',
       anonKey:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVhbXRrdGx4YmRkZW5ycnZ3em13Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2NjkwMTAsImV4cCI6MjA5MjI0NTAxMH0.xWxw6jxJbWxOPFfotnUN-Omvb1I8Yx4XrcQ0ZgANeD0',
     );
